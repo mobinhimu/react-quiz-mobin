@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --bodyBackground: #f2f4f8;
+  --successGreen: #00ff84;
+  --dangerRed: #ffc0c7;
+  --questionBG: #e4e8ee;
+  --fontPrimary: #002333;
+  --active: #2dbf64;
+  --border-radius-sm: 5px;
+  --icon-color: #4f46e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--fontPrimary);
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--bodyBackground);
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+h4 {
+  color: #7c83a7;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.error {
+  background-color: var(--dangerRed);
+  padding: 0.6rem 1.2rem;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .column {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Check Box Container */
+.checkBoxContainer {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  gap: 10px;
+  margin: 2rem 0;
+  grid-auto-flow: column;
+}
+
+@media only screen and (max-width: 1024px) {
+  :global(.checkBoxContainer) {
+    grid-auto-flow: unset;
+    margin: 1rem 0;
+  }
+}
+
+/* checkbox option */
+.option {
+  width: 100%;
+  height: 58px;
+  background: var(--questionBG);
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 0 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.option:hover {
+  background: hsla(229, 20%, 57%, 0.253);
+}
+
+.option input {
+  margin-right: 15px;
+}
+
+.option span {
+  width: 100%;
+}
+
+.option span:nth-of-type(2) {
+  text-align: right;
+  color: #4e536f;
+  font-size: 14px;
+}

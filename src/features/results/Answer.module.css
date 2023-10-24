@@ -1,0 +1,9 @@
+.correct {
+  background: var(--successGreen) !important;
+  font-weight: 600;
+}
+
+.wrong {
+  background: var(--dangerRed) !important;
+  font-weight: 600;
+}

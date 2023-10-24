@@ -1,0 +1,11 @@
+.qtitle {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--fontPrimary);
+  font-weight: 600;
+}
+
+.qtitle span {
+  color: var(--active);
+}

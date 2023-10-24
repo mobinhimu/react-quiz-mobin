@@ -1,0 +1,26 @@
+.videos {
+  width: 100%;
+  display: grid;
+  margin: 3rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 20px;
+  row-gap: 20px;
+}
+
+.fetchedVideo {
+  background-color: var(--questionBG);
+  text-align: center;
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .videos {
+    width: 90%;
+  }
+
+  .fetchedVideo {
+    padding: 0.75rem;
+  }
+}
