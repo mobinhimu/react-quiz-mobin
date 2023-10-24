@@ -40,7 +40,7 @@ Welcome to the React Quiz Adventure! Get ready to explore the fascinating world 
 2. **Navigate to the Project:** 🌏 Now, let's embark on a journey into the world of React quizzes. Change your current directory to the project folder:
 
    ```bash
-   cd react-quiz-app
+   cd react-quiz-mobin
    ```
 
 3. **Install Dependencies:** 🔧 Prepare for your quiz quest by installing all the necessary dependencies. Run the following command to equip yourself for the adventure:
